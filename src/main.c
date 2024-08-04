@@ -2,10 +2,14 @@
 #include "pathtracer.h"
 #include "input.h"
 #include "platform.h"
+#include "matrix_transform.h"
 
 int main(int argc, char** argv) {
+    struct Quaternion m[4];
+    matrix_translation(v3_zero(), m);
+
 	struct World world;
-	world.camera.fov = 90;
+	world.camera.fov = 60;
 	world.camera.position = (struct Vec3){ 25, 25, 0 };
 	//world.camera.orientation = (struct Vec2){ atan2(0, -1), asin(0) };
     world.camera.orientation = (struct Vec2){0, 0};

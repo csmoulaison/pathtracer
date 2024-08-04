@@ -177,6 +177,30 @@ src/math_utils.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pathtrace.dir/build.make CMakeFiles/pathtrace.dir/src/math_utils.c.s
 .PHONY : src/math_utils.c.s
 
+src/matrix_transform.o: src/matrix_transform.c.o
+.PHONY : src/matrix_transform.o
+
+# target to build an object file
+src/matrix_transform.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pathtrace.dir/build.make CMakeFiles/pathtrace.dir/src/matrix_transform.c.o
+.PHONY : src/matrix_transform.c.o
+
+src/matrix_transform.i: src/matrix_transform.c.i
+.PHONY : src/matrix_transform.i
+
+# target to preprocess a source file
+src/matrix_transform.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pathtrace.dir/build.make CMakeFiles/pathtrace.dir/src/matrix_transform.c.i
+.PHONY : src/matrix_transform.c.i
+
+src/matrix_transform.s: src/matrix_transform.c.s
+.PHONY : src/matrix_transform.s
+
+# target to generate assembly for a file
+src/matrix_transform.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pathtrace.dir/build.make CMakeFiles/pathtrace.dir/src/matrix_transform.c.s
+.PHONY : src/matrix_transform.c.s
+
 src/pathtracer.o: src/pathtracer.c.o
 .PHONY : src/pathtracer.o
 
@@ -264,6 +288,9 @@ help:
 	@echo "... src/math_utils.o"
 	@echo "... src/math_utils.i"
 	@echo "... src/math_utils.s"
+	@echo "... src/matrix_transform.o"
+	@echo "... src/matrix_transform.i"
+	@echo "... src/matrix_transform.s"
 	@echo "... src/pathtracer.o"
 	@echo "... src/pathtracer.i"
 	@echo "... src/pathtracer.s"

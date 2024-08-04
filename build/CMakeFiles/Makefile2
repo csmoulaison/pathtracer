@@ -81,12 +81,12 @@ clean: CMakeFiles/pathtrace.dir/clean
 CMakeFiles/pathtrace.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pathtrace.dir/build.make CMakeFiles/pathtrace.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pathtrace.dir/build.make CMakeFiles/pathtrace.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/csmoulaison/repos/pathtracer/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target pathtrace"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/csmoulaison/repos/pathtracer/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target pathtrace"
 .PHONY : CMakeFiles/pathtrace.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/pathtrace.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/csmoulaison/repos/pathtracer/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/csmoulaison/repos/pathtracer/build/CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/pathtrace.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/csmoulaison/repos/pathtracer/build/CMakeFiles 0
 .PHONY : CMakeFiles/pathtrace.dir/rule

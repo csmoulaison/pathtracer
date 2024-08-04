@@ -4,6 +4,7 @@
 CMakeFiles/pathtrace.dir/src/main.c.o: /home/csmoulaison/repos/pathtracer/src/main.c \
   /home/csmoulaison/repos/pathtracer/src/input.h \
   /home/csmoulaison/repos/pathtracer/src/math_utils.h \
+  /home/csmoulaison/repos/pathtracer/src/matrix_transform.h \
   /home/csmoulaison/repos/pathtracer/src/pathtracer.h \
   /home/csmoulaison/repos/pathtracer/src/platform.h \
   /home/csmoulaison/repos/pathtracer/src/world.h \
@@ -238,6 +239,39 @@ CMakeFiles/pathtrace.dir/src/main.c.o: /home/csmoulaison/repos/pathtracer/src/ma
 
 CMakeFiles/pathtrace.dir/src/math_utils.c.o: /home/csmoulaison/repos/pathtracer/src/math_utils.c \
   /home/csmoulaison/repos/pathtracer/src/math_utils.h \
+  /usr/include/bits/floatn-common.h \
+  /usr/include/bits/floatn.h \
+  /usr/include/bits/flt-eval-method.h \
+  /usr/include/bits/fp-fast.h \
+  /usr/include/bits/fp-logb.h \
+  /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/libm-simd-decl-stubs.h \
+  /usr/include/bits/long-double.h \
+  /usr/include/bits/math-vector.h \
+  /usr/include/bits/mathcalls-helper-functions.h \
+  /usr/include/bits/mathcalls.h \
+  /usr/include/bits/stdint-intn.h \
+  /usr/include/bits/stdint-least.h \
+  /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/time64.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/bits/types.h \
+  /usr/include/bits/typesizes.h \
+  /usr/include/bits/wchar.h \
+  /usr/include/bits/wordsize.h \
+  /usr/include/features-time64.h \
+  /usr/include/features.h \
+  /usr/include/gnu/stubs-64.h \
+  /usr/include/gnu/stubs.h \
+  /usr/include/math.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/stdint.h \
+  /usr/include/sys/cdefs.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/stdint.h
+
+CMakeFiles/pathtrace.dir/src/matrix_transform.c.o: /home/csmoulaison/repos/pathtracer/src/matrix_transform.c \
+  /home/csmoulaison/repos/pathtracer/src/math_utils.h \
+  /home/csmoulaison/repos/pathtracer/src/matrix_transform.h \
   /usr/include/bits/floatn-common.h \
   /usr/include/bits/floatn.h \
   /usr/include/bits/flt-eval-method.h \
@@ -582,6 +616,8 @@ CMakeFiles/pathtrace.dir/src/world.c.o: /home/csmoulaison/repos/pathtracer/src/w
 
 /home/csmoulaison/repos/pathtracer/src/platform.c:
 
+/home/csmoulaison/repos/pathtracer/src/matrix_transform.c:
+
 /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/xsavesintrin.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/xmmintrin.h:
@@ -718,6 +754,8 @@ CMakeFiles/pathtrace.dir/src/world.c.o: /home/csmoulaison/repos/pathtracer/src/w
 
 /usr/include/sys/types.h:
 
+/usr/include/sys/select.h:
+
 /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/serializeintrin.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/prfchiintrin.h:
@@ -794,6 +832,14 @@ CMakeFiles/pathtrace.dir/src/world.c.o: /home/csmoulaison/repos/pathtracer/src/w
 
 /usr/include/SDL2/SDL_log.h:
 
+/usr/include/SDL2/SDL_messagebox.h:
+
+/usr/include/SDL2/SDL_locale.h:
+
+/usr/include/SDL2/SDL_video.h:
+
+/usr/include/SDL2/SDL_rect.h:
+
 /usr/include/SDL2/SDL_audio.h:
 
 /usr/include/bits/fp-fast.h:
@@ -838,12 +884,6 @@ CMakeFiles/pathtrace.dir/src/world.c.o: /home/csmoulaison/repos/pathtracer/src/w
 
 /usr/include/SDL2/SDL_events.h:
 
-/usr/include/SDL2/SDL_error.h:
-
-/usr/include/SDL2/SDL_mouse.h:
-
-/usr/include/SDL2/SDL_config.h:
-
 /usr/include/SDL2/SDL_sensor.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/avx512vp2intersectvlintrin.h:
@@ -854,11 +894,11 @@ CMakeFiles/pathtrace.dir/src/world.c.o: /home/csmoulaison/repos/pathtracer/src/w
 
 /usr/include/features-time64.h:
 
-/usr/include/SDL2/SDL_video.h:
+/usr/include/SDL2/SDL_error.h:
 
-/usr/include/SDL2/SDL_rect.h:
+/usr/include/SDL2/SDL_mouse.h:
 
-/usr/include/SDL2/SDL_locale.h:
+/usr/include/SDL2/SDL_config.h:
 
 /usr/include/SDL2/SDL_quit.h:
 
@@ -887,8 +927,6 @@ CMakeFiles/pathtrace.dir/src/world.c.o: /home/csmoulaison/repos/pathtracer/src/w
 /usr/include/SDL2/SDL_loadso.h:
 
 /usr/include/strings.h:
-
-/usr/include/SDL2/SDL_messagebox.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/amxbf16intrin.h:
 
@@ -1020,6 +1058,8 @@ CMakeFiles/pathtrace.dir/src/world.c.o: /home/csmoulaison/repos/pathtracer/src/w
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/avx512vldqintrin.h:
 
+/home/csmoulaison/repos/pathtracer/src/matrix_transform.h:
+
 /usr/include/bits/waitflags.h:
 
 /usr/include/ctype.h:
@@ -1053,5 +1093,3 @@ CMakeFiles/pathtrace.dir/src/world.c.o: /home/csmoulaison/repos/pathtracer/src/w
 /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/avx512pfintrin.h:
 
 /usr/include/sys/cdefs.h:
-
-/usr/include/sys/select.h:

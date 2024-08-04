@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/pathtrace.dir/src/main.c.o.d"
   "CMakeFiles/pathtrace.dir/src/math_utils.c.o"
   "CMakeFiles/pathtrace.dir/src/math_utils.c.o.d"
+  "CMakeFiles/pathtrace.dir/src/matrix_transform.c.o"
+  "CMakeFiles/pathtrace.dir/src/matrix_transform.c.o.d"
   "CMakeFiles/pathtrace.dir/src/pathtracer.c.o"
   "CMakeFiles/pathtrace.dir/src/pathtracer.c.o.d"
   "CMakeFiles/pathtrace.dir/src/platform.c.o"

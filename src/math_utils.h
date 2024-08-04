@@ -3,8 +3,8 @@
 #include <math.h>
 
 struct Vec2 {
-	float x;
-	float y;
+    float x;
+    float y;
 };
 
 struct Vec3 {
@@ -43,6 +43,7 @@ struct Sphere {
 	float radius;
 };
 
+struct Vec3 v3_zero();
 struct Vec3 v3_unit(struct Vec3 v);
 struct Vec3 v3_normalize(struct Vec3 v);
 struct Vec3 v3_add(struct Vec3 a, struct Vec3 b);
@@ -57,6 +58,7 @@ float float_min(float a, float b);
 float degrees_to_radians(float d);
 struct Vec3 rotate_vector(struct Quaternion q, struct Vec3 v);
 // Quaternions
+struct Quaternion quat_zero();
 void quat_normalize(struct Quaternion* q);
 struct Quaternion quat_multiply(struct Quaternion a, struct Quaternion b);
 struct Quaternion quat_conjugate(struct Quaternion q);

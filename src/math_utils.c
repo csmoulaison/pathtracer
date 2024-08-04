@@ -3,6 +3,10 @@
 #define _USE_MATH_DEFINES
 #include <math.h>
 
+struct Vec3 v3_zero() {
+    return (struct Vec3){0, 0, 0};
+}
+
 struct Vec3 v3_normalize(struct Vec3 v) {
     float length = v3_length(v);
 	if (length > 0) {
@@ -71,6 +75,10 @@ struct Vec3 rotate_vector(struct Quaternion q, struct Vec3 v) {
 	uv = v3_scale(uv, 2.0 * q.w);
 	uuv = v3_scale(uuv, 2.0);
 	return v3_add(v3_add(v, uv), uuv);
+}
+
+struct Quaternion quat_zero() {
+    return (struct Quaternion){0, 0, 0, 0};
 }
 
 void quat_normalize(struct Quaternion* q) {

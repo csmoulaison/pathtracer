@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/csmoulaison/repos/pathtracer/src/main.c" "CMakeFiles/pathtrace.dir/src/main.c.o" "gcc" "CMakeFiles/pathtrace.dir/src/main.c.o.d"
   "/home/csmoulaison/repos/pathtracer/src/math_utils.c" "CMakeFiles/pathtrace.dir/src/math_utils.c.o" "gcc" "CMakeFiles/pathtrace.dir/src/math_utils.c.o.d"
+  "/home/csmoulaison/repos/pathtracer/src/matrix_transform.c" "CMakeFiles/pathtrace.dir/src/matrix_transform.c.o" "gcc" "CMakeFiles/pathtrace.dir/src/matrix_transform.c.o.d"
   "/home/csmoulaison/repos/pathtracer/src/pathtracer.c" "CMakeFiles/pathtrace.dir/src/pathtracer.c.o" "gcc" "CMakeFiles/pathtrace.dir/src/pathtracer.c.o.d"
   "/home/csmoulaison/repos/pathtracer/src/platform.c" "CMakeFiles/pathtrace.dir/src/platform.c.o" "gcc" "CMakeFiles/pathtrace.dir/src/platform.c.o.d"
   "/home/csmoulaison/repos/pathtracer/src/world.c" "CMakeFiles/pathtrace.dir/src/world.c.o" "gcc" "CMakeFiles/pathtrace.dir/src/world.c.o.d"
