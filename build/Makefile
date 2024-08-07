@@ -129,6 +129,30 @@ pathtrace/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pathtrace.dir/build.make CMakeFiles/pathtrace.dir/build
 .PHONY : pathtrace/fast
 
+src/camera.o: src/camera.c.o
+.PHONY : src/camera.o
+
+# target to build an object file
+src/camera.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pathtrace.dir/build.make CMakeFiles/pathtrace.dir/src/camera.c.o
+.PHONY : src/camera.c.o
+
+src/camera.i: src/camera.c.i
+.PHONY : src/camera.i
+
+# target to preprocess a source file
+src/camera.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pathtrace.dir/build.make CMakeFiles/pathtrace.dir/src/camera.c.i
+.PHONY : src/camera.c.i
+
+src/camera.s: src/camera.c.s
+.PHONY : src/camera.s
+
+# target to generate assembly for a file
+src/camera.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pathtrace.dir/build.make CMakeFiles/pathtrace.dir/src/camera.c.s
+.PHONY : src/camera.c.s
+
 src/main.o: src/main.c.o
 .PHONY : src/main.o
 
@@ -201,6 +225,30 @@ src/matrix_transform.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pathtrace.dir/build.make CMakeFiles/pathtrace.dir/src/matrix_transform.c.s
 .PHONY : src/matrix_transform.c.s
 
+src/min.o: src/min.c.o
+.PHONY : src/min.o
+
+# target to build an object file
+src/min.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pathtrace.dir/build.make CMakeFiles/pathtrace.dir/src/min.c.o
+.PHONY : src/min.c.o
+
+src/min.i: src/min.c.i
+.PHONY : src/min.i
+
+# target to preprocess a source file
+src/min.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pathtrace.dir/build.make CMakeFiles/pathtrace.dir/src/min.c.i
+.PHONY : src/min.c.i
+
+src/min.s: src/min.c.s
+.PHONY : src/min.s
+
+# target to generate assembly for a file
+src/min.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pathtrace.dir/build.make CMakeFiles/pathtrace.dir/src/min.c.s
+.PHONY : src/min.c.s
+
 src/pathtracer.o: src/pathtracer.c.o
 .PHONY : src/pathtracer.o
 
@@ -249,6 +297,78 @@ src/platform.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pathtrace.dir/build.make CMakeFiles/pathtrace.dir/src/platform.c.s
 .PHONY : src/platform.c.s
 
+src/quaternion.o: src/quaternion.c.o
+.PHONY : src/quaternion.o
+
+# target to build an object file
+src/quaternion.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pathtrace.dir/build.make CMakeFiles/pathtrace.dir/src/quaternion.c.o
+.PHONY : src/quaternion.c.o
+
+src/quaternion.i: src/quaternion.c.i
+.PHONY : src/quaternion.i
+
+# target to preprocess a source file
+src/quaternion.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pathtrace.dir/build.make CMakeFiles/pathtrace.dir/src/quaternion.c.i
+.PHONY : src/quaternion.c.i
+
+src/quaternion.s: src/quaternion.c.s
+.PHONY : src/quaternion.s
+
+# target to generate assembly for a file
+src/quaternion.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pathtrace.dir/build.make CMakeFiles/pathtrace.dir/src/quaternion.c.s
+.PHONY : src/quaternion.c.s
+
+src/ray.o: src/ray.c.o
+.PHONY : src/ray.o
+
+# target to build an object file
+src/ray.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pathtrace.dir/build.make CMakeFiles/pathtrace.dir/src/ray.c.o
+.PHONY : src/ray.c.o
+
+src/ray.i: src/ray.c.i
+.PHONY : src/ray.i
+
+# target to preprocess a source file
+src/ray.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pathtrace.dir/build.make CMakeFiles/pathtrace.dir/src/ray.c.i
+.PHONY : src/ray.c.i
+
+src/ray.s: src/ray.c.s
+.PHONY : src/ray.s
+
+# target to generate assembly for a file
+src/ray.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pathtrace.dir/build.make CMakeFiles/pathtrace.dir/src/ray.c.s
+.PHONY : src/ray.c.s
+
+src/vector.o: src/vector.c.o
+.PHONY : src/vector.o
+
+# target to build an object file
+src/vector.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pathtrace.dir/build.make CMakeFiles/pathtrace.dir/src/vector.c.o
+.PHONY : src/vector.c.o
+
+src/vector.i: src/vector.c.i
+.PHONY : src/vector.i
+
+# target to preprocess a source file
+src/vector.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pathtrace.dir/build.make CMakeFiles/pathtrace.dir/src/vector.c.i
+.PHONY : src/vector.c.i
+
+src/vector.s: src/vector.c.s
+.PHONY : src/vector.s
+
+# target to generate assembly for a file
+src/vector.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pathtrace.dir/build.make CMakeFiles/pathtrace.dir/src/vector.c.s
+.PHONY : src/vector.c.s
+
 src/world.o: src/world.c.o
 .PHONY : src/world.o
 
@@ -282,6 +402,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... pathtrace"
+	@echo "... src/camera.o"
+	@echo "... src/camera.i"
+	@echo "... src/camera.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
@@ -291,12 +414,24 @@ help:
 	@echo "... src/matrix_transform.o"
 	@echo "... src/matrix_transform.i"
 	@echo "... src/matrix_transform.s"
+	@echo "... src/min.o"
+	@echo "... src/min.i"
+	@echo "... src/min.s"
 	@echo "... src/pathtracer.o"
 	@echo "... src/pathtracer.i"
 	@echo "... src/pathtracer.s"
 	@echo "... src/platform.o"
 	@echo "... src/platform.i"
 	@echo "... src/platform.s"
+	@echo "... src/quaternion.o"
+	@echo "... src/quaternion.i"
+	@echo "... src/quaternion.s"
+	@echo "... src/ray.o"
+	@echo "... src/ray.i"
+	@echo "... src/ray.s"
+	@echo "... src/vector.o"
+	@echo "... src/vector.i"
+	@echo "... src/vector.s"
 	@echo "... src/world.o"
 	@echo "... src/world.i"
 	@echo "... src/world.s"

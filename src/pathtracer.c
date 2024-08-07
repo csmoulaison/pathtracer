@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "pathtracer.h"
 
 void render(struct World* world, uint32_t width, uint32_t height, uint32_t* out_pixels) {

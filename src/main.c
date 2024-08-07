@@ -6,7 +6,7 @@
 
 int main(int argc, char** argv) {
     struct Quaternion m[4];
-    matrix_translation(v3_zero(), m);
+    matrix_translate(v3_zero(), m);
 
 	struct World world;
 	world.camera.fov = 60;

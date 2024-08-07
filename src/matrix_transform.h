@@ -1,5 +1,7 @@
 #pragma once
-#include "math_utils.h"
+#include "vector.h"
+#include "quaternion.h"
+#include "math.h"
 
 void matrix_view(struct Vec3 cam_center, float pitch, float yaw, struct Quaternion out[4]);
 void matrix_translate(struct Vec3 t, struct Quaternion out[4]);

@@ -1,7 +1,7 @@
 #pragma once
 #include <stdbool.h>
 #include <SDL.h>
-#include "math_utils.h"
+#include "vector.h"
 #include "input.h"
 
 struct Platform {

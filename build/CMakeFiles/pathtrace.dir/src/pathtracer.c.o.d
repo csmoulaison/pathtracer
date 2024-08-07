@@ -1,6 +1,7 @@
 CMakeFiles/pathtrace.dir/src/pathtracer.c.o: \
  /home/csmoulaison/repos/pathtracer/src/pathtracer.c \
- /usr/include/stdc-predef.h /usr/include/stdio.h \
+ /usr/include/stdc-predef.h \
+ /home/csmoulaison/repos/pathtracer/src/pathtracer.h /usr/include/stdio.h \
  /usr/include/bits/libc-header-start.h /usr/include/features.h \
  /usr/include/features-time64.h /usr/include/bits/wordsize.h \
  /usr/include/bits/timesize.h /usr/include/sys/cdefs.h \
@@ -16,15 +17,20 @@ CMakeFiles/pathtrace.dir/src/pathtracer.c.o: \
  /usr/include/bits/types/cookie_io_functions_t.h \
  /usr/include/bits/stdio_lim.h /usr/include/bits/floatn.h \
  /usr/include/bits/floatn-common.h \
- /home/csmoulaison/repos/pathtracer/src/pathtracer.h \
  /home/csmoulaison/repos/pathtracer/src/world.h \
- /home/csmoulaison/repos/pathtracer/src/math_utils.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/stdint.h \
- /usr/include/stdint.h /usr/include/bits/wchar.h \
- /usr/include/bits/stdint-intn.h /usr/include/bits/stdint-uintn.h \
- /usr/include/bits/stdint-least.h /usr/include/math.h \
+ /home/csmoulaison/repos/pathtracer/src/vector.h /usr/include/math.h \
  /usr/include/bits/math-vector.h /usr/include/bits/libm-simd-decl-stubs.h \
  /usr/include/bits/flt-eval-method.h /usr/include/bits/fp-logb.h \
  /usr/include/bits/fp-fast.h \
  /usr/include/bits/mathcalls-helper-functions.h \
- /usr/include/bits/mathcalls.h
+ /usr/include/bits/mathcalls.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/stdint.h \
+ /usr/include/stdint.h /usr/include/bits/wchar.h \
+ /usr/include/bits/stdint-intn.h /usr/include/bits/stdint-uintn.h \
+ /usr/include/bits/stdint-least.h \
+ /home/csmoulaison/repos/pathtracer/src/sphere.h \
+ /home/csmoulaison/repos/pathtracer/src/camera.h \
+ /home/csmoulaison/repos/pathtracer/src/ray.h \
+ /home/csmoulaison/repos/pathtracer/src/intersection.h \
+ /home/csmoulaison/repos/pathtracer/src/math_utils.h \
+ /home/csmoulaison/repos/pathtracer/src/min.h

@@ -1,7 +1,6 @@
-CMakeFiles/pathtrace.dir/src/matrix_transform.c.o: \
- /home/csmoulaison/repos/pathtracer/src/matrix_transform.c \
+CMakeFiles/pathtrace.dir/src/vector.c.o: \
+ /home/csmoulaison/repos/pathtracer/src/vector.c \
  /usr/include/stdc-predef.h \
- /home/csmoulaison/repos/pathtracer/src/matrix_transform.h \
  /home/csmoulaison/repos/pathtracer/src/vector.h /usr/include/math.h \
  /usr/include/bits/libc-header-start.h /usr/include/features.h \
  /usr/include/features-time64.h /usr/include/bits/wordsize.h \
@@ -18,5 +17,4 @@ CMakeFiles/pathtrace.dir/src/matrix_transform.c.o: \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/stdint.h \
  /usr/include/stdint.h /usr/include/bits/wchar.h \
  /usr/include/bits/stdint-intn.h /usr/include/bits/stdint-uintn.h \
- /usr/include/bits/stdint-least.h \
- /home/csmoulaison/repos/pathtracer/src/quaternion.h
+ /usr/include/bits/stdint-least.h
