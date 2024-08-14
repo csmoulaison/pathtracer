@@ -1,15 +1,18 @@
 #include "pathtracer.h"
+#include "math_utils.h"
 
-void render(struct World* world, uint32_t width, uint32_t height, uint32_t* out_pixels) {
+void render(struct Sphere* spheres, uint8_t spheres_len, uint32_t width, uint32_t height, uint32_t* out_pixels) {
     float focal_length = 1;
+    // float fov = 90;
 
     // Viewport size
     struct Vec2 view_size;
     {
-        float fov_theta = degrees_to_radians(world->camera.fov);
-        float h = tan(fov_theta / 2);
-        view_size.y = 2 * h * focal_length;
-        view_size.x = view_size.y * (width / height);
+        //float fov_theta = degrees_to_radians(fov);
+        //float h = tan(fov_theta / 2);
+        //view_size.y = 2 * h * focal_length;
+        view_size.y = 2;
+        view_size.x = view_size.y * ((double)width / height);
     }
 
     // UV coordinates here represent the 2d viewport space without cam context.
@@ -24,7 +27,7 @@ void render(struct World* world, uint32_t width, uint32_t height, uint32_t* out_
 
     // Upper left of view in world space
     // struct Vec3 view_upper_left = cam_center;
-    struct Vec3 view_upper_left = v3_sub(v3_zero(), (struct Vec3){0, 0, focal_length});
+    struct Vec3 view_upper_left = (struct Vec3){0, 0, -focal_length};
     view_upper_left = v3_sub(view_upper_left, v3_div(view_u, 2));
     view_upper_left = v3_sub(view_upper_left, v3_div(view_v, 2));
 
@@ -47,15 +50,17 @@ void render(struct World* world, uint32_t width, uint32_t height, uint32_t* out_
             }
 
             // NODO ~won't need ray if camera is always at origin.~
-            // Wait never mind, ray used for bounces
-            struct Ray ray = { v3_zero(), v3_sub(pixel_center, v3_zero()) };
+            // Wait never mind, ray needed for bounces (unless we construct "view matrix" for each bounce?)
+            // TODO See above: should we construct a view matrix from the vantage point of each bounce?
+            //struct Ray ray = { v3_zero(), v3_sub(pixel_center, v3_zero()) };
+            struct Ray ray = { v3_zero(), pixel_center };
 
 			// Move pixel pointer
 			uint32_t* p = out_pixels;
 			p += y * width + x;
 
 			// Check for intersection
-			struct Intersection intersection = intersect_world(&ray, world);
+			struct Intersection intersection = intersect_world(ray, spheres, spheres_len);
 			if (intersection.intersected == 1) {
                 struct Vec3 color = v3_scale(
                     (struct Vec3){intersection.normal.x + 1, intersection.normal.y + 1, intersection.normal.z + 1},
@@ -70,8 +75,7 @@ void render(struct World* world, uint32_t width, uint32_t height, uint32_t* out_
                 ((uint8_t*)&c32)[3] = 255;
 
                 *p = c32;
-			}
-			else {
+			} else {
                 *p = sky_color(ray);
 			}
 
@@ -95,21 +99,17 @@ uint32_t sky_color(struct Ray r) {
     return result;
 }
 
-struct Intersection intersect_world(struct Ray* ray, struct World* world) {
+struct Intersection intersect_world(struct Ray ray, struct Sphere* spheres, uint8_t spheres_len) {
 	struct Intersection closest_intersection;
 	closest_intersection.intersected = 0;
 	float closest_t = INFINITY;
 
 	// Eventually in a for loop for all geometry
-	for (int i = 0; i < 2; ++i) {
-		struct Sphere sphere = world->sphere;
-		if (i == 1) {
-			sphere = world->floor;
-		}
+	for (int i = 0; i < spheres_len; i++) {
+		// TODO we aren't doing this subtraction. Good?
+		// spheres[i].center = v3_sub(spheres[i].center, cam_center);
 
-        sphere.center = v3_sub(sphere.center, world->camera.position);
-
-		struct Intersection intersection = intersect_sphere(ray, sphere);
+		struct Intersection intersection = intersect_sphere(ray, spheres[i]);
 		if (intersection.intersected == 1 && intersection.t < closest_t) {
 			closest_intersection.intersected = 1;
 			closest_intersection = intersection;
@@ -121,15 +121,15 @@ struct Intersection intersect_world(struct Ray* ray, struct World* world) {
 }
 
 // TODO outward normals
-struct Intersection intersect_sphere(struct Ray* r, struct Sphere s) {
+struct Intersection intersect_sphere(struct Ray r, struct Sphere s) {
 	struct Intersection result;
 	result.intersected = 0;
 	result.point = (struct Vec3){ 0, 0, 0 };
 	result.t = 0;
 
-	struct Vec3 oc = v3_sub(s.center, r->origin);
-	float a = v3_dot(r->direction, r->direction);
-	float b = -2.0 * v3_dot(r->direction, oc);
+	struct Vec3 oc = v3_sub(s.center, r.origin);
+	float a = v3_dot(r.direction, r.direction);
+	float b = -2.0 * v3_dot(r.direction, oc);
 	float c = v3_dot(oc, oc) - s.radius * s.radius;
 	float discriminant = b * b - 4 * a * c;
 
@@ -141,10 +141,10 @@ struct Intersection intersect_sphere(struct Ray* r, struct Sphere s) {
 		if (t1 >= 0 || t2 >= 0) {
 			result.intersected = 1;
 			result.t = float_min(t1, t2);
-			result.point = v3_add(r->origin, v3_scale(r->direction, result.t));
+			result.point = v3_add(r.origin, v3_scale(r.direction, result.t));
             // TODO Calculated every time there's an intersection.
             // Thrown away if a closer intersection occurs. Any fixes?
-            result.normal = v3_unit(v3_sub(ray_at(*r, result.t), s.center));
+            result.normal = v3_unit(v3_sub(ray_at(r, result.t), s.center));
 			return result;
 		}
 	}

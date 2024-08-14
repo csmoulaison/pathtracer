@@ -38,7 +38,6 @@ CMakeFiles/pathtrace.dir/src/main.c.o: /home/csmoulaison/repos/pathtracer/src/ma
   /home/csmoulaison/repos/pathtracer/src/camera.h \
   /home/csmoulaison/repos/pathtracer/src/input.h \
   /home/csmoulaison/repos/pathtracer/src/intersection.h \
-  /home/csmoulaison/repos/pathtracer/src/math_utils.h \
   /home/csmoulaison/repos/pathtracer/src/matrix_transform.h \
   /home/csmoulaison/repos/pathtracer/src/min.h \
   /home/csmoulaison/repos/pathtracer/src/pathtracer.h \
@@ -348,7 +347,6 @@ CMakeFiles/pathtrace.dir/src/min.c.o: /home/csmoulaison/repos/pathtracer/src/min
   /usr/include/stdc-predef.h
 
 CMakeFiles/pathtrace.dir/src/pathtracer.c.o: /home/csmoulaison/repos/pathtracer/src/pathtracer.c \
-  /home/csmoulaison/repos/pathtracer/src/camera.h \
   /home/csmoulaison/repos/pathtracer/src/intersection.h \
   /home/csmoulaison/repos/pathtracer/src/math_utils.h \
   /home/csmoulaison/repos/pathtracer/src/min.h \
@@ -356,7 +354,6 @@ CMakeFiles/pathtrace.dir/src/pathtracer.c.o: /home/csmoulaison/repos/pathtracer/
   /home/csmoulaison/repos/pathtracer/src/ray.h \
   /home/csmoulaison/repos/pathtracer/src/sphere.h \
   /home/csmoulaison/repos/pathtracer/src/vector.h \
-  /home/csmoulaison/repos/pathtracer/src/world.h \
   /usr/include/bits/floatn-common.h \
   /usr/include/bits/floatn.h \
   /usr/include/bits/flt-eval-method.h \
@@ -371,17 +368,9 @@ CMakeFiles/pathtrace.dir/src/pathtracer.c.o: /home/csmoulaison/repos/pathtracer/
   /usr/include/bits/stdint-intn.h \
   /usr/include/bits/stdint-least.h \
   /usr/include/bits/stdint-uintn.h \
-  /usr/include/bits/stdio_lim.h \
   /usr/include/bits/time64.h \
   /usr/include/bits/timesize.h \
   /usr/include/bits/types.h \
-  /usr/include/bits/types/FILE.h \
-  /usr/include/bits/types/__FILE.h \
-  /usr/include/bits/types/__fpos64_t.h \
-  /usr/include/bits/types/__fpos_t.h \
-  /usr/include/bits/types/__mbstate_t.h \
-  /usr/include/bits/types/cookie_io_functions_t.h \
-  /usr/include/bits/types/struct_FILE.h \
   /usr/include/bits/typesizes.h \
   /usr/include/bits/wchar.h \
   /usr/include/bits/wordsize.h \
@@ -392,10 +381,7 @@ CMakeFiles/pathtrace.dir/src/pathtracer.c.o: /home/csmoulaison/repos/pathtracer/
   /usr/include/math.h \
   /usr/include/stdc-predef.h \
   /usr/include/stdint.h \
-  /usr/include/stdio.h \
   /usr/include/sys/cdefs.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/stdarg.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/stddef.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/stdint.h
 
 CMakeFiles/pathtrace.dir/src/platform.c.o: /home/csmoulaison/repos/pathtracer/src/platform.c \
@@ -633,7 +619,129 @@ CMakeFiles/pathtrace.dir/src/platform.c.o: /home/csmoulaison/repos/pathtracer/sr
 
 CMakeFiles/pathtrace.dir/src/quaternion.c.o: /home/csmoulaison/repos/pathtracer/src/quaternion.c \
   /home/csmoulaison/repos/pathtracer/src/quaternion.h \
-  /usr/include/stdc-predef.h
+  /usr/include/bits/floatn-common.h \
+  /usr/include/bits/floatn.h \
+  /usr/include/bits/flt-eval-method.h \
+  /usr/include/bits/fp-fast.h \
+  /usr/include/bits/fp-logb.h \
+  /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/libm-simd-decl-stubs.h \
+  /usr/include/bits/long-double.h \
+  /usr/include/bits/math-vector.h \
+  /usr/include/bits/mathcalls-helper-functions.h \
+  /usr/include/bits/mathcalls.h \
+  /usr/include/bits/time64.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/bits/types.h \
+  /usr/include/bits/typesizes.h \
+  /usr/include/bits/wordsize.h \
+  /usr/include/features-time64.h \
+  /usr/include/features.h \
+  /usr/include/gnu/stubs-64.h \
+  /usr/include/gnu/stubs.h \
+  /usr/include/math.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/sys/cdefs.h
+
+CMakeFiles/pathtrace.dir/src/ray.c.o: /home/csmoulaison/repos/pathtracer/src/ray.c \
+  /home/csmoulaison/repos/pathtracer/src/ray.h \
+  /home/csmoulaison/repos/pathtracer/src/vector.h \
+  /usr/include/bits/floatn-common.h \
+  /usr/include/bits/floatn.h \
+  /usr/include/bits/flt-eval-method.h \
+  /usr/include/bits/fp-fast.h \
+  /usr/include/bits/fp-logb.h \
+  /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/libm-simd-decl-stubs.h \
+  /usr/include/bits/long-double.h \
+  /usr/include/bits/math-vector.h \
+  /usr/include/bits/mathcalls-helper-functions.h \
+  /usr/include/bits/mathcalls.h \
+  /usr/include/bits/stdint-intn.h \
+  /usr/include/bits/stdint-least.h \
+  /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/time64.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/bits/types.h \
+  /usr/include/bits/typesizes.h \
+  /usr/include/bits/wchar.h \
+  /usr/include/bits/wordsize.h \
+  /usr/include/features-time64.h \
+  /usr/include/features.h \
+  /usr/include/gnu/stubs-64.h \
+  /usr/include/gnu/stubs.h \
+  /usr/include/math.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/stdint.h \
+  /usr/include/sys/cdefs.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/stdint.h
+
+CMakeFiles/pathtrace.dir/src/vector.c.o: /home/csmoulaison/repos/pathtracer/src/vector.c \
+  /home/csmoulaison/repos/pathtracer/src/vector.h \
+  /usr/include/bits/floatn-common.h \
+  /usr/include/bits/floatn.h \
+  /usr/include/bits/flt-eval-method.h \
+  /usr/include/bits/fp-fast.h \
+  /usr/include/bits/fp-logb.h \
+  /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/libm-simd-decl-stubs.h \
+  /usr/include/bits/long-double.h \
+  /usr/include/bits/math-vector.h \
+  /usr/include/bits/mathcalls-helper-functions.h \
+  /usr/include/bits/mathcalls.h \
+  /usr/include/bits/stdint-intn.h \
+  /usr/include/bits/stdint-least.h \
+  /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/time64.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/bits/types.h \
+  /usr/include/bits/typesizes.h \
+  /usr/include/bits/wchar.h \
+  /usr/include/bits/wordsize.h \
+  /usr/include/features-time64.h \
+  /usr/include/features.h \
+  /usr/include/gnu/stubs-64.h \
+  /usr/include/gnu/stubs.h \
+  /usr/include/math.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/stdint.h \
+  /usr/include/sys/cdefs.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/stdint.h
+
+CMakeFiles/pathtrace.dir/src/world.c.o: /home/csmoulaison/repos/pathtracer/src/world.c \
+  /home/csmoulaison/repos/pathtracer/src/camera.h \
+  /home/csmoulaison/repos/pathtracer/src/sphere.h \
+  /home/csmoulaison/repos/pathtracer/src/vector.h \
+  /home/csmoulaison/repos/pathtracer/src/world.h \
+  /usr/include/bits/floatn-common.h \
+  /usr/include/bits/floatn.h \
+  /usr/include/bits/flt-eval-method.h \
+  /usr/include/bits/fp-fast.h \
+  /usr/include/bits/fp-logb.h \
+  /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/libm-simd-decl-stubs.h \
+  /usr/include/bits/long-double.h \
+  /usr/include/bits/math-vector.h \
+  /usr/include/bits/mathcalls-helper-functions.h \
+  /usr/include/bits/mathcalls.h \
+  /usr/include/bits/stdint-intn.h \
+  /usr/include/bits/stdint-least.h \
+  /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/time64.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/bits/types.h \
+  /usr/include/bits/typesizes.h \
+  /usr/include/bits/wchar.h \
+  /usr/include/bits/wordsize.h \
+  /usr/include/features-time64.h \
+  /usr/include/features.h \
+  /usr/include/gnu/stubs-64.h \
+  /usr/include/gnu/stubs.h \
+  /usr/include/math.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/stdint.h \
+  /usr/include/sys/cdefs.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/stdint.h
 
 
 /home/csmoulaison/repos/pathtracer/src/platform.c:
@@ -772,6 +880,8 @@ CMakeFiles/pathtrace.dir/src/quaternion.c.o: /home/csmoulaison/repos/pathtracer/
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/amxcomplexintrin.h:
 
+/home/csmoulaison/repos/pathtracer/src/vector.c:
+
 /usr/include/wchar.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/cldemoteintrin.h:
@@ -873,16 +983,6 @@ CMakeFiles/pathtrace.dir/src/quaternion.c.o: /home/csmoulaison/repos/pathtracer/
 /usr/include/bits/fp-logb.h:
 
 /usr/include/bits/long-double.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/avx512vldqintrin.h:
-
-/usr/include/ctype.h:
-
-/usr/include/bits/waitflags.h:
-
-/home/csmoulaison/repos/pathtracer/src/matrix_transform.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/stdint.h:
 
 /usr/include/bits/libm-simd-decl-stubs.h:
 
@@ -998,9 +1098,13 @@ CMakeFiles/pathtrace.dir/src/quaternion.c.o: /home/csmoulaison/repos/pathtracer/
 
 /usr/include/stdc-predef.h:
 
+/home/csmoulaison/repos/pathtracer/src/ray.c:
+
 /usr/include/gnu/stubs.h:
 
 /usr/include/bits/pthreadtypes-arch.h:
+
+/home/csmoulaison/repos/pathtracer/src/world.c:
 
 /usr/include/SDL2/SDL_hints.h:
 
@@ -1035,6 +1139,16 @@ CMakeFiles/pathtrace.dir/src/quaternion.c.o: /home/csmoulaison/repos/pathtracer/
 /usr/include/SDL2/SDL_misc.h:
 
 /usr/include/SDL2/SDL_mutex.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/avx512vldqintrin.h:
+
+/usr/include/ctype.h:
+
+/home/csmoulaison/repos/pathtracer/src/matrix_transform.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/stdint.h:
+
+/usr/include/bits/waitflags.h:
 
 /usr/include/SDL2/SDL_haptic.h:
 

@@ -1,0 +1,68 @@
+[
+{
+  "directory": "/home/csmoulaison/repos/pathtracer/build",
+  "command": "/sbin/cc  -I/home/csmoulaison/repos/pathtracer/include -isystem /usr/include/SDL2  -o CMakeFiles/pathtrace.dir/src/camera.c.o -c /home/csmoulaison/repos/pathtracer/src/camera.c",
+  "file": "/home/csmoulaison/repos/pathtracer/src/camera.c",
+  "output": "CMakeFiles/pathtrace.dir/src/camera.c.o"
+},
+{
+  "directory": "/home/csmoulaison/repos/pathtracer/build",
+  "command": "/sbin/cc  -I/home/csmoulaison/repos/pathtracer/include -isystem /usr/include/SDL2  -o CMakeFiles/pathtrace.dir/src/main.c.o -c /home/csmoulaison/repos/pathtracer/src/main.c",
+  "file": "/home/csmoulaison/repos/pathtracer/src/main.c",
+  "output": "CMakeFiles/pathtrace.dir/src/main.c.o"
+},
+{
+  "directory": "/home/csmoulaison/repos/pathtracer/build",
+  "command": "/sbin/cc  -I/home/csmoulaison/repos/pathtracer/include -isystem /usr/include/SDL2  -o CMakeFiles/pathtrace.dir/src/math_utils.c.o -c /home/csmoulaison/repos/pathtracer/src/math_utils.c",
+  "file": "/home/csmoulaison/repos/pathtracer/src/math_utils.c",
+  "output": "CMakeFiles/pathtrace.dir/src/math_utils.c.o"
+},
+{
+  "directory": "/home/csmoulaison/repos/pathtracer/build",
+  "command": "/sbin/cc  -I/home/csmoulaison/repos/pathtracer/include -isystem /usr/include/SDL2  -o CMakeFiles/pathtrace.dir/src/matrix_transform.c.o -c /home/csmoulaison/repos/pathtracer/src/matrix_transform.c",
+  "file": "/home/csmoulaison/repos/pathtracer/src/matrix_transform.c",
+  "output": "CMakeFiles/pathtrace.dir/src/matrix_transform.c.o"
+},
+{
+  "directory": "/home/csmoulaison/repos/pathtracer/build",
+  "command": "/sbin/cc  -I/home/csmoulaison/repos/pathtracer/include -isystem /usr/include/SDL2  -o CMakeFiles/pathtrace.dir/src/min.c.o -c /home/csmoulaison/repos/pathtracer/src/min.c",
+  "file": "/home/csmoulaison/repos/pathtracer/src/min.c",
+  "output": "CMakeFiles/pathtrace.dir/src/min.c.o"
+},
+{
+  "directory": "/home/csmoulaison/repos/pathtracer/build",
+  "command": "/sbin/cc  -I/home/csmoulaison/repos/pathtracer/include -isystem /usr/include/SDL2  -o CMakeFiles/pathtrace.dir/src/pathtracer.c.o -c /home/csmoulaison/repos/pathtracer/src/pathtracer.c",
+  "file": "/home/csmoulaison/repos/pathtracer/src/pathtracer.c",
+  "output": "CMakeFiles/pathtrace.dir/src/pathtracer.c.o"
+},
+{
+  "directory": "/home/csmoulaison/repos/pathtracer/build",
+  "command": "/sbin/cc  -I/home/csmoulaison/repos/pathtracer/include -isystem /usr/include/SDL2  -o CMakeFiles/pathtrace.dir/src/platform.c.o -c /home/csmoulaison/repos/pathtracer/src/platform.c",
+  "file": "/home/csmoulaison/repos/pathtracer/src/platform.c",
+  "output": "CMakeFiles/pathtrace.dir/src/platform.c.o"
+},
+{
+  "directory": "/home/csmoulaison/repos/pathtracer/build",
+  "command": "/sbin/cc  -I/home/csmoulaison/repos/pathtracer/include -isystem /usr/include/SDL2  -o CMakeFiles/pathtrace.dir/src/quaternion.c.o -c /home/csmoulaison/repos/pathtracer/src/quaternion.c",
+  "file": "/home/csmoulaison/repos/pathtracer/src/quaternion.c",
+  "output": "CMakeFiles/pathtrace.dir/src/quaternion.c.o"
+},
+{
+  "directory": "/home/csmoulaison/repos/pathtracer/build",
+  "command": "/sbin/cc  -I/home/csmoulaison/repos/pathtracer/include -isystem /usr/include/SDL2  -o CMakeFiles/pathtrace.dir/src/ray.c.o -c /home/csmoulaison/repos/pathtracer/src/ray.c",
+  "file": "/home/csmoulaison/repos/pathtracer/src/ray.c",
+  "output": "CMakeFiles/pathtrace.dir/src/ray.c.o"
+},
+{
+  "directory": "/home/csmoulaison/repos/pathtracer/build",
+  "command": "/sbin/cc  -I/home/csmoulaison/repos/pathtracer/include -isystem /usr/include/SDL2  -o CMakeFiles/pathtrace.dir/src/vector.c.o -c /home/csmoulaison/repos/pathtracer/src/vector.c",
+  "file": "/home/csmoulaison/repos/pathtracer/src/vector.c",
+  "output": "CMakeFiles/pathtrace.dir/src/vector.c.o"
+},
+{
+  "directory": "/home/csmoulaison/repos/pathtracer/build",
+  "command": "/sbin/cc  -I/home/csmoulaison/repos/pathtracer/include -isystem /usr/include/SDL2  -o CMakeFiles/pathtrace.dir/src/world.c.o -c /home/csmoulaison/repos/pathtracer/src/world.c",
+  "file": "/home/csmoulaison/repos/pathtracer/src/world.c",
+  "output": "CMakeFiles/pathtrace.dir/src/world.c.o"
+}
+]

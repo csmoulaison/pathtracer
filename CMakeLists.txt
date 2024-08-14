@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 3.28.0)
 
 set(PROJECT_NAME pathtrace)
 project(${PROJECT_NAME})
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 find_package(SDL2 REQUIRED)
 include_directories(${SDL2_INCLUDE_DIRS})

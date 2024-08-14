@@ -1,8 +1,29 @@
 #include "camera.h"
 
 void camera_look(struct Vec2 look_direction, struct Camera* camera) {
-    camera->orientation.x += look_direction.x;
-    camera->orientation.y += look_direction.y;
+    const float max_pitch = 2;
+      
+    camera->yaw += look_direction.x;
+    camera->pitch += look_direction.y;
+    if(camera->pitch > max_pitch) {
+        camera->pitch = max_pitch;
+    } else if (camera->pitch < -max_pitch) {
+        camera->pitch = -max_pitch;
+    }
+}
+
+struct Vec3 camera_forward(float yaw) {
+    struct Vec3 f = {0, 0, -1};
+    float cosy = cos(yaw);
+    float siny = sin(yaw);
+            
+    struct Vec3 cam_forward = {
+        cosy * f.x + siny * f.z,
+        f.y,
+        -siny * f.x + cosy * f.z
+    };
+
+    return cam_forward;
 }
 
 /* originally from camera_look function

@@ -3,8 +3,11 @@
 #include "sphere.h"
 #include "camera.h"
 
+#define SPHERES_MAX 8
+
 struct World {
 	struct Camera camera;
-	struct Sphere sphere;
-	struct Sphere floor;
+	struct Sphere spheres[SPHERES_MAX];
+	uint8_t spheres_len;
 };
+
