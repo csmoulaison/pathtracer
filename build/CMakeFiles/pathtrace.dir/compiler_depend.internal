@@ -37,9 +37,11 @@ CMakeFiles/pathtrace.dir/src/camera.c.o
 
 CMakeFiles/pathtrace.dir/src/main.c.o
  /home/csmoulaison/repos/pathtracer/src/main.c
+ /home/csmoulaison/repos/pathtracer/src/box.h
  /home/csmoulaison/repos/pathtracer/src/camera.h
  /home/csmoulaison/repos/pathtracer/src/input.h
  /home/csmoulaison/repos/pathtracer/src/intersection.h
+ /home/csmoulaison/repos/pathtracer/src/math_utils.h
  /home/csmoulaison/repos/pathtracer/src/matrix_transform.h
  /home/csmoulaison/repos/pathtracer/src/min.h
  /home/csmoulaison/repos/pathtracer/src/pathtracer.h
@@ -353,6 +355,7 @@ CMakeFiles/pathtrace.dir/src/min.c.o
 
 CMakeFiles/pathtrace.dir/src/pathtracer.c.o
  /home/csmoulaison/repos/pathtracer/src/pathtracer.c
+ /home/csmoulaison/repos/pathtracer/src/box.h
  /home/csmoulaison/repos/pathtracer/src/intersection.h
  /home/csmoulaison/repos/pathtracer/src/math_utils.h
  /home/csmoulaison/repos/pathtracer/src/min.h
@@ -720,6 +723,7 @@ CMakeFiles/pathtrace.dir/src/vector.c.o
 
 CMakeFiles/pathtrace.dir/src/world.c.o
  /home/csmoulaison/repos/pathtracer/src/world.c
+ /home/csmoulaison/repos/pathtracer/src/box.h
  /home/csmoulaison/repos/pathtracer/src/camera.h
  /home/csmoulaison/repos/pathtracer/src/sphere.h
  /home/csmoulaison/repos/pathtracer/src/vector.h

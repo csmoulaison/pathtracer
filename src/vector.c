@@ -14,6 +14,14 @@ struct Vec3 v3_normalize(struct Vec3 v) {
 	return v;
 }
 
+struct Vec3 v3_inverse(struct Vec3 v) {
+    return (struct Vec3){
+        1 / v.x,
+        1 / v.y,
+        1 / v.z
+    };
+}
+
 struct Vec3 v3_unit(struct Vec3 v) {
     return v3_div(v, v3_length(v));
 }

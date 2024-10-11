@@ -1,7 +1,7 @@
 #include "camera.h"
 
 void camera_look(struct Vec2 look_direction, struct Camera* camera) {
-    const float max_pitch = 2;
+    const float max_pitch = 89;
       
     camera->yaw += look_direction.x;
     camera->pitch += look_direction.y;

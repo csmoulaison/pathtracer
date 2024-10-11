@@ -35,9 +35,11 @@ CMakeFiles/pathtrace.dir/src/camera.c.o: /home/csmoulaison/repos/pathtracer/src/
   /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/stdint.h
 
 CMakeFiles/pathtrace.dir/src/main.c.o: /home/csmoulaison/repos/pathtracer/src/main.c \
+  /home/csmoulaison/repos/pathtracer/src/box.h \
   /home/csmoulaison/repos/pathtracer/src/camera.h \
   /home/csmoulaison/repos/pathtracer/src/input.h \
   /home/csmoulaison/repos/pathtracer/src/intersection.h \
+  /home/csmoulaison/repos/pathtracer/src/math_utils.h \
   /home/csmoulaison/repos/pathtracer/src/matrix_transform.h \
   /home/csmoulaison/repos/pathtracer/src/min.h \
   /home/csmoulaison/repos/pathtracer/src/pathtracer.h \
@@ -347,6 +349,7 @@ CMakeFiles/pathtrace.dir/src/min.c.o: /home/csmoulaison/repos/pathtracer/src/min
   /usr/include/stdc-predef.h
 
 CMakeFiles/pathtrace.dir/src/pathtracer.c.o: /home/csmoulaison/repos/pathtracer/src/pathtracer.c \
+  /home/csmoulaison/repos/pathtracer/src/box.h \
   /home/csmoulaison/repos/pathtracer/src/intersection.h \
   /home/csmoulaison/repos/pathtracer/src/math_utils.h \
   /home/csmoulaison/repos/pathtracer/src/min.h \
@@ -709,6 +712,7 @@ CMakeFiles/pathtrace.dir/src/vector.c.o: /home/csmoulaison/repos/pathtracer/src/
   /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/stdint.h
 
 CMakeFiles/pathtrace.dir/src/world.c.o: /home/csmoulaison/repos/pathtracer/src/world.c \
+  /home/csmoulaison/repos/pathtracer/src/box.h \
   /home/csmoulaison/repos/pathtracer/src/camera.h \
   /home/csmoulaison/repos/pathtracer/src/sphere.h \
   /home/csmoulaison/repos/pathtracer/src/vector.h \
@@ -890,8 +894,6 @@ CMakeFiles/pathtrace.dir/src/world.c.o: /home/csmoulaison/repos/pathtracer/src/w
 
 /usr/include/sys/select.h:
 
-/usr/include/strings.h:
-
 /usr/include/stdio.h:
 
 /usr/include/inttypes.h:
@@ -923,6 +925,10 @@ CMakeFiles/pathtrace.dir/src/world.c.o: /home/csmoulaison/repos/pathtracer/src/w
 /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/avx512ifmaintrin.h:
 
 /usr/include/SDL2/SDL_atomic.h:
+
+/usr/include/bits/uintn-identity.h:
+
+/usr/include/SDL2/SDL.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/cmpccxaddintrin.h:
 
@@ -956,6 +962,10 @@ CMakeFiles/pathtrace.dir/src/world.c.o: /home/csmoulaison/repos/pathtracer/src/w
 
 /usr/include/SDL2/SDL_guid.h:
 
+/usr/include/strings.h:
+
+/home/csmoulaison/repos/pathtracer/src/box.h:
+
 /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/vaesintrin.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/usermsrintrin.h:
@@ -983,6 +993,16 @@ CMakeFiles/pathtrace.dir/src/world.c.o: /home/csmoulaison/repos/pathtracer/src/w
 /usr/include/bits/fp-logb.h:
 
 /usr/include/bits/long-double.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/avx512vldqintrin.h:
+
+/usr/include/ctype.h:
+
+/usr/include/bits/waitflags.h:
+
+/home/csmoulaison/repos/pathtracer/src/matrix_transform.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/stdint.h:
 
 /usr/include/bits/libm-simd-decl-stubs.h:
 
@@ -1053,10 +1073,6 @@ CMakeFiles/pathtrace.dir/src/world.c.o: /home/csmoulaison/repos/pathtracer/src/w
 /usr/include/SDL2/SDL_cpuinfo.h:
 
 /usr/include/bits/typesizes.h:
-
-/usr/include/SDL2/SDL.h:
-
-/usr/include/bits/uintn-identity.h:
 
 /usr/include/SDL2/SDL_keycode.h:
 
@@ -1139,16 +1155,6 @@ CMakeFiles/pathtrace.dir/src/world.c.o: /home/csmoulaison/repos/pathtracer/src/w
 /usr/include/SDL2/SDL_misc.h:
 
 /usr/include/SDL2/SDL_mutex.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/avx512vldqintrin.h:
-
-/usr/include/ctype.h:
-
-/home/csmoulaison/repos/pathtracer/src/matrix_transform.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/stdint.h:
-
-/usr/include/bits/waitflags.h:
 
 /usr/include/SDL2/SDL_haptic.h:
 

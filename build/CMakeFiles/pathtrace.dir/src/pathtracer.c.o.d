@@ -23,4 +23,5 @@ CMakeFiles/pathtrace.dir/src/pathtracer.c.o: \
  /home/csmoulaison/repos/pathtracer/src/intersection.h \
  /home/csmoulaison/repos/pathtracer/src/min.h \
  /home/csmoulaison/repos/pathtracer/src/sphere.h \
+ /home/csmoulaison/repos/pathtracer/src/box.h \
  /home/csmoulaison/repos/pathtracer/src/math_utils.h

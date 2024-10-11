@@ -9,4 +9,9 @@ struct Input {
 	int d;
 	int w;
 	int s;
+    int q;
+    int e;
+
+	int mouse_delta_x;
+	int mouse_delta_y;
 };

@@ -21,10 +21,13 @@ struct Vec2_I16 {
 
 struct Vec3 v3_zero();
 
+// (vector) -> number
+float v3_length(struct Vec3 v);
+
 // (vector) -> vector
 struct Vec3 v3_unit(struct Vec3 v);
 struct Vec3 v3_normalize(struct Vec3 v);
-float v3_length(struct Vec3 v);
+struct Vec3 v3_inverse(struct Vec3 v);
 
 // (vector, vector) -> vector
 struct Vec3 v3_add(struct Vec3 a, struct Vec3 b);

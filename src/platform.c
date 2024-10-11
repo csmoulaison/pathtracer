@@ -48,10 +48,15 @@ struct Platform init_platform() {
     );
     platform.canvas_pixels = (uint32_t*)malloc(platform.canvas_size.x * platform.canvas_size.y * COLOR_CHANNEL_COUNT);
 
+    SDL_SetRelativeMouseMode(SDL_TRUE);
+
     return platform;
 }
 
 void poll_platform_events(struct Platform* platform, struct Input* input) {
+    input->mouse_delta_x = 0;
+    input->mouse_delta_y = 0;
+     
     SDL_Event event;
     while(SDL_PollEvent(&event) != 0) {
         switch(event.type) {
@@ -87,6 +92,12 @@ void poll_platform_events(struct Platform* platform, struct Input* input) {
                     case SDL_SCANCODE_S:
                         input->s = 1;
                         break;
+                    case SDL_SCANCODE_Q:
+                        input->q = 1;
+                        break;
+                    case SDL_SCANCODE_E:
+                        input->e = 1;
+                        break;
                     default:
                         break;
                 }
@@ -117,9 +128,19 @@ void poll_platform_events(struct Platform* platform, struct Input* input) {
                     case SDL_SCANCODE_S:
                         input->s = 0;
                         break;
+                    case SDL_SCANCODE_Q:
+                        input->q = 0;
+                        break;
+                    case SDL_SCANCODE_E:
+                        input->e = 0;
+                        break;
                     default:
                         break;
                 }
+                break;
+            case SDL_MOUSEMOTION:
+                input->mouse_delta_x = event.motion.xrel;
+                input->mouse_delta_y = event.motion.yrel;
                 break;
             default:
                 break;

@@ -85,3 +85,13 @@ void multmat_44_3(struct Quaternion* m, struct Vec3 v, struct Vec3* out) {
     out->y = out4.y;
     out->z = out4.z;
 }
+
+void multmat_33_3(struct Vec3* m, struct Vec3 v, struct Vec3* out) {
+    for(int i = 0; i < 3; i++) {
+        float sum = 0;
+        for(int j = 0; j < 3; j++) {
+            sum += ((float*)&m[i])[j] * ((float*)&v)[j];
+        }
+        ((float*)out)[i] = sum;
+    }
+}

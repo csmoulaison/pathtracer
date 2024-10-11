@@ -20,4 +20,5 @@ CMakeFiles/pathtrace.dir/src/world.c.o: \
  /usr/include/bits/stdint-intn.h /usr/include/bits/stdint-uintn.h \
  /usr/include/bits/stdint-least.h \
  /home/csmoulaison/repos/pathtracer/src/sphere.h \
- /home/csmoulaison/repos/pathtracer/src/camera.h
+ /home/csmoulaison/repos/pathtracer/src/camera.h \
+ /home/csmoulaison/repos/pathtracer/src/box.h

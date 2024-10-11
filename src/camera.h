@@ -3,6 +3,7 @@
 
 struct Camera {
 	struct Vec3 position;
+	struct Vec3 orientation;
 	float pitch;
 	float yaw;
 	float fov;
